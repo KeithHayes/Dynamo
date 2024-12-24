@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>K-Dog</title>
+    <meta name="keywords" content="Elgato, Stream Deck, Linux Software, C++">
+    <meta name="description" content="Mint Deck Freeware">
+    <meta name="description" content="A Linux C++ software application which controls Elgato Stream Deck devices.">
+    <meta name="description" content="  And other writings.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./assets/img/bg/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/w3.css">
+    <link rel="stylesheet" href="./assets/css/body.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/scratchpad.css">
+    <link rel="stylesheet" href="./assets/css/numbers.css">
+    <link rel="stylesheet" href="./assets/css/linkmenu.css">
+    <link rel="stylesheet" href="./assets/css/dynamo.css">
+    <script src="./assets/js/d3.min.js"></script>
+    <script src="./assets/js/marked.min.js"></script>
+    <script src="./assets/js/dynamo.js"></script>
+    <script src="./assets/js/pagetext.js"></script>
+    <script src="./assets/js/launchdynamo.js"></script>
+    <script src="./assets/js/pagetext.js"></script>
+    <script src="./assets/js/plottext.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <div id="rose" class="w3-container">
+      <a href="javascript:showWhiteRose()"></a>
+      <div>
+        <video id="whiterosevideo"  poster="./public/pics/the_search_for_the_white_rose.png" controls="" width="0" height="0">
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center;">
+      <span id="status_light" class="status-off"><span class="fas fa-circle"></span></span>
+      <div style="text-align: center; flex: 1; align-items: center; display: flex; justify-content: center;">
+        <h2>Limits to Growth</h2>
+      </div>
+    </div>
+    <div id="main_content" class="w3-twothird w3-panel">
+      <div id="dynamoapplication" class="w3-row">
+        <div id="dynamotoolbar"></div>
+        <form id="uploadform" action="upload.php" method="post" enctype="multipart/form-data" class="formcontainer">
+          <input type="file" id="uploadfile" style="display: none;">
+          <input type="file" id="outputfile" style="display: none;" />
+          <div id="displayname" style="display: none;"></div>
+          <input id="filename" type="submit" value="Upload" name="submit" style="display: none;">
+        </form>
+        <div id="work_area">
+          <div id="dynamodisplay" class="text-area"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar" class="w3-third w3-panel">
+      <div style="float:left;">
+        <h2>Sidebar</h2>
+      </div>
+      <br>
+      <div class="dyna-image">
+        <img src="./public/pics/underconstruction.png" alt="Under Construction">
+      </div>
+    </div>
+    <div class="w3-container"></div>
+    <div id="page_footer" class="w3-container">
+      <span class="oliveFont">Copyright © 2024&nbsp;or whenever and before that even.&nbsp;&nbsp;Rights reserved but I&#39;ll share.  K-Dog lives in Newcastle, Washington.&nbsp;&nbsp;K-Dog's email is <a target="_blank" rel="noopener noreferrer" style="text-decoration: none;" href="mailto:kdog@chasingthesquirrel.com">kdog@chasingthesquirrel.com</a></span>
+    </div>
+  </body>
+</html>

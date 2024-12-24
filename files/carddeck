@@ -1,0 +1,42 @@
+*      M478-248,DYN,TEST,1,1,0,0
+RUN    2698JP
+NOTE   MODEL OF RETAIL STORE
+NOTE
+1L     IAR.K=IAR.J+(DT)(SRR.JK-SSR.JK)                                 INVENTORY ACTUAL
+1L     UOR.K=UOR.J+(DT)(RRR.JK-SSR.JK)                                 UNFILLED ORDERS
+20A    NIR.K=IAR.K/DT                                                  NEGATIVE INVENTORY
+20A    STR.K=UOR.K/DFR                                                 SHIPMENTS TRIED
+54R    SSR.KL=MIN(STR.K,NIR.K)                                         SHIPMENTS SENT
+40R    PSR.KL=RRR.JK+(1/DIR)(IDR.K-IAR.K)                              PURCHASE ORDERS SENT
+12A    IDR.K=(AIR)(RSR.K)                                              INVENTORY DESIRED
+3L     RSR.K=RSR.J+(DT)(1/DRR)(RRR                                     REQUISITIONS SMOOTHED
+X1     .JK-RSR.J)
+39R    SRR.KL=DELAY3(PSR.JK,DTR)                                       SHIPMENTS RECEIVED
+NOTE
+NOTE   INITIAL CONDITIONS
+NOTE
+12N    UOR=(DFR)(RRR)
+6N     RSR=RRR
+6N     IAR=IDR
+NOTE
+NOTE   INPUT
+NOTE
+7R     RRR.KL=RRI+RCR.K                                                REQUISITIONS RECEIVED
+45A    RCR.K=STEP(STH,5)                                               REQUISITION CHANGE
+NOTE
+NOTE   CONSTANTS
+NOTE
+C      AIR=8 WKS                                                       CONSTANT FOR INVENTORY
+C      DFR=1 WK                                                        DELAY IN FILLING ORDERS
+C      DIR=4 WKS                                                       DLY REFILLING INVENTORY
+C      DRR=8 WKS                                                       REQUISITION SMTHNG T C
+C      DTR=2 WKS                                                       DELAY IN TRANSIT
+C      RRI=1000 ITEMS/WK                                               REQ. RECEIVED INITIALLY
+C      STH=100 ITEMS/WK                                                STEP HEIGHT
+NOTE
+PRINT  1)IAR(0.1),IDR(0.1)/2)UOR(0.1)/3)RRR(0.1),SSR(0.1)/4)PSR(0.1),SRR(0.1)
+PRINT  1)IAR,IDR/2)UOR/3)RRR,SSR/4)PSR,SRR
+PLOT   IAR=I,UOR=U(0,12000)/RRR=R,SSR=S,PSR=P,SRR=Q(1000,1200)
+PLOT   RRR=R,SSR=S,PSR=P,SRR=Q(1000,1200)
+PLOT   IAR=I,UOR=U/RRR=R,SSR=S,PSR=P,SRR=Q
+SPEC   DT=0.1/LENGTH=50/PRTPER=20/PLTPER=10

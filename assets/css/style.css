@@ -1,0 +1,109 @@
+.pagevideotext {
+  padding: 1em 0;
+}
+
+#example caption {
+  font-weight: bold;
+  text-align: left;
+  font-family: "Segoe UI",Arial,sans-serif;
+	font-weight: 400;
+  font-size: 36px;
+  padding: .5rem 0;
+  color: #8092d6;
+}
+
+#example {
+  border-collapse: collapse;
+}
+
+#example th,
+#example td {
+  padding: .5rem;
+}
+
+#example td:last-child {
+  text-align: center;
+}
+
+#example th {
+  text-align: left;
+  background-color: #0a3d01;
+  color: #ff9700;
+}
+
+#example thead tr:first-child th {
+  background-color: #0f5e02;
+  color: #ff9700;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+#example thead tr:first-child th:not(:first-child) {
+  border-left: 1px solid #0f5e02;
+}
+
+#example tfoot tr {
+  background-color: #081e02;
+  color:#ffc800;
+}
+
+#example tfoot tr:last-child td {
+  border-bottom: none;
+}
+
+#example tbody tr:nth-child(even){
+  background-color: #0A3D01;
+  color: #ff9700;
+}
+#example tbody tr:nth-child(odd){
+  background-color: #0f5e02;
+  color: #ff9700;
+}
+
+#example tbody tr:nth-child(even) td.select {
+  border: 1px solid #ffc800;
+  color:#ffc800;
+}
+
+#example tbody tr:nth-child(odd) td.select {
+  border: 1px solid #ffc800;
+  color:#ffc800;
+}
+
+@media (max-width: 700px) {
+  #example {
+    border: none;
+  }
+  #example,
+  #example tr,
+  #example td {
+    display: block;
+  }
+  #example thead,
+  #example th {
+    display: none;
+  }
+
+  #example td:nth-child(1)::before { content: "Item #: "; font-weight: bold; }
+  #example td:nth-child(2)::before { content: "Product or Service: "; font-weight: bold; }
+  #example td:nth-child(3)::before { content: "Price (ea): "; font-weight: bold; }
+  #example td:nth-child(4)::before { content: "Retail Price (case): "; font-weight: bold; }
+  #example td:nth-child(5)::before { content: "Case Discount: "; font-weight: bold; }
+  #example td:nth-child(6)::before { content: "12+ Case Price: "; font-weight: bold; }
+  #example td:nth-child(7)::before { content: "12+ Case Discount: "; font-weight: bold; }
+  
+  #example tfoot td:nth-child(1)::before,
+  #example tfoot td:nth-child(2)::before { content: ""; }
+}
+
+#example tbody {
+  display: table-row-group;
+}
+
+#example tfoot tr {
+  display: table-row !important;
+}
+
+
+
+

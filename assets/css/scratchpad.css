@@ -1,0 +1,248 @@
+table#dog-users {
+  overflow: hidden;
+}
+
+table#dog-users thead {
+  padding: 3px;
+}
+
+table#dog-users tbody {
+  height: 70px;
+  overflow: auto;
+  padding: 3px;
+}
+
+table#dog-users td {
+  padding: 3px 10px;
+}
+
+#dog-users tbody {
+  display: block;
+}
+
+#dog-users thead>tr,
+tfoot>tr,
+tbody {
+  width: 100%;
+  padding: 3px;
+  display: block;
+}
+
+#dog-users tr.clicked {
+  background: #ccd;
+}
+
+#dog-users tr.highlight {
+  background: #eef;
+}
+
+table#dog-users {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+table#dog-users tr th {
+  background: #0f5e02;
+  color: #ff9700;
+  text-align: center;
+  /*border: 1px solid #3e5500;*/
+  padding: 3px;
+}
+
+table#dog-users tr td {
+  border: 1px solid #3e5500;
+  padding: 3px;
+}
+
+
+table#dog-users thead th:nth-child(1),
+table#dog-users tbody td:nth-child(1) {
+  min-width: 7em;
+  width: 11em;
+}
+
+table#dog-users thead th:nth-child(2),
+table#dog-users tbody td:nth-child(2) {
+  min-width: 7em;
+  width: 11em;
+}
+
+table#dog-users thead th:nth-child(3),
+table#dog-users tbody td:nth-child(3) {
+  min-width: 11em;
+  width: 16em;
+}
+
+table#dog-users thead th:nth-child(4),
+table#dog-users tbody td:nth-child(4) {
+  min-width: 7em;
+  width: 11em;
+}
+
+table#dog-users thead th:nth-child(5),
+table#dog-users tbody td:nth-child(5) {
+  min-width: 5em;
+  width: 9em;
+}
+
+table#dog-users thead th:nth-child(6),
+table#dog-users tbody td:nth-child(6) {
+  min-width: 5em;
+  width: 9em;
+}
+
+
+
+
+
+.jukeboxbtn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  width: 25px;
+  padding: 2px 0px 2px 0px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.jukeboxbtnup {
+  background: #081e02;
+  color: #808080;
+  border: solid #808080 2px;
+}
+
+.jukeboxbtn:hover {
+  background: #808080;
+  color: #081e02;
+  border: solid #808080 2px;
+}
+
+.jukeboxbtndown {
+  background: #808080;
+  color: #081e02;
+  border: solid #808080 2px;
+}
+
+.jukeboxbtnred {
+  background: #802000;
+  color: #090800;
+  font-size: 14px;
+  border: solid #808080 2px;
+}
+
+.jukeboxbtngreen {
+  background: #406501;
+  color: #090800;
+  font-size: 14px;
+  border: solid #808080 2px;
+}
+
+.jukebox {
+  background-image: url(../img/mp/jukebox.svg);
+  background-size: auto;
+  width: 470px;
+  background-repeat: no-repeat;
+  min-height: 559px;
+}
+
+ul.musicmenu1 {
+  padding-left: 110px;
+}
+
+ul.musicmenu2 {
+  padding-left: 110px;
+}
+
+ul.musicmenu3 {
+  padding-left: 122px;
+}
+
+ul.musicmenu li {
+  display: inline;
+}
+
+.menuwrap {
+  padding-top: 150px;
+}
+
+.titletxt {
+  color: #fad200;
+  font-size: 1.52em;
+  max-width: 270px;
+}
+
+.artisttxt {
+  color: #92ca1e;
+  font-size: 1.35em;
+  max-width: 270px;
+}
+
+.column ul > li > a {
+  display: inline-block;
+  width: 32px; 
+  height: 27px;
+  position: relative;
+  text-indent: 0;
+  background-color: #081e02;
+}
+
+.submenu ul {
+  /*border: 1px solid #3e5500;*/
+  width: 180px;
+  height: 28px;
+  position: relative;
+  right: 40px;
+  background-color: #081e02;
+ }
+ 
+.column ul > li {
+  width: 32px;
+	height: 32px;
+  margin: 0px;
+  background-color: #081e02;
+  float:none;
+}
+
+.submenu {
+  margin-top: 9px;
+  background-color: #081e02;
+}
+
+.hide {
+  display: none;
+}
+
+.show + .hide {
+ display: block;
+}
+
+.blink + .hide {
+ display: block;
+}
+
+.hover_img a 
+{
+  position:relative;
+}
+.hover_img a span
+{
+  position:absolute;
+  display:none;
+  z-index:99;
+}
+.hover_img a:hover span
+{
+  display:block;
+  margin-left: 240px;
+}
+
+
+
+

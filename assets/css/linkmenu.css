@@ -1,0 +1,167 @@
+.randomBTN {
+	background-image: url(../img/ad/random.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+
+.fullscreenBTN {
+	background-image: url(../img/ad/fullscreen.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+
+.arrowleftBTN {
+	background-image: url(../img/ad/leftarrow.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+
+.arrowrightBTN {
+	background-image: url(../img/ad/rightarrow.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+
+.loadstatusBTN {
+	background-image: url(../img/ad/status.svg);
+	background-size: 30px 240px;
+	background-repeat: no-repeat;
+}
+
+.viewpageBTN {
+	background-image: url(../img/ad/viewpage.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+
+.pagebackgroundBTN {
+	background-image: url(../img/ad/pagebkgrnd.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+
+.swatchBTN {
+	background-image: url(../img/ad/swatch.svg);
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+}
+
+.paintbrushBTN {
+	background-image: url(../img/ad/paintbrush.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+
+.eyedropperBTN {
+	background-image: url(../img/ad/dropper.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+
+.doorBTN {
+	background-image: url(../img/ad/door.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+
+.homeBTN {
+	background-image: url(../img/ad/home.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+
+#linkviewer {
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.linkmenuaddress {
+  color: rgb(149, 167, 33);
+  background-color: rgb(8, 30, 2);
+  border: 1px solid rgb(46, 85, 0);
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: 48px;
+  font-size: 16px;
+}
+
+.linkmenusearch {
+  color: rgb(149, 167, 33);
+  background-color: rgb(8, 30, 2);
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  border-top: 1px solid rgb(46, 85, 0);
+  border-left: 1px solid rgb(46, 85, 0);
+  border-right: 1px solid rgb(46, 85, 0);
+  border-bottom: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.border-open {
+  border-left: 1px solid rgb(46, 85, 0);
+  border-right: 1px solid rgb(46, 85, 0);
+}
+
+.border-closed {
+  border-left: 1px solid rgb(46, 85, 0);
+  border-right: 1px solid rgb(46, 85, 0);
+  border-bottom: 1px solid rgb(46, 85, 0);
+  border-radius: 0 0 10px 10px;
+}
+
+
+.linkmenutools {
+	list-style: none;
+	width: 100%;
+	height: 48px;
+	margin: 0;
+	padding: 0 0 0 2px;
+}
+
+ .linkmenutools a {
+  display: block;
+  height: 30px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-indent: -1000em;
+  text-decoration: none;
+}
+
+.linkmenutools a:active {
+  margin-top: 2px;
+  margin-left: 2px;
+  background-position: 0 -60px;
+}
+
+.linkmenutools a:hover {
+  background-position: 0 -30px;
+}
+
+.linkmenutools li {
+  float: left;
+  min-width: 32px;
+  height: 32px;
+  margin-top: 0.7em;
+  margin-left: 0.5em;
+  line-height: 2em;
+}
+
+.linkmenutools li.on a, .dogAdminBar li.on a:hover {
+  background-position: 0 -60px;
+}
+
+.linkmenutools li.dogEditButton {
+  background-image: url(../img/ed/button_shadow.gif);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+#linkview_iframe {
+  clear: left;
+  width: 100%;
+  height: calc(100vw * 3 / 8);
+  border: 1px solid #3e5500;
+  border-radius: 0 0 10px 10px;
+}

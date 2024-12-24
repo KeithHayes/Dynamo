@@ -1,0 +1,104 @@
+.zeroBTN
+{
+	background-image: url(../img/ni/zero.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+.oneBTN
+{
+	background-image: url(../img/ni/one.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+.twoBTN
+{
+	background-image: url(../img/ni/two.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+.threeBTN
+{
+	background-image: url(../img/ni/three.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+.fourBTN
+{
+	background-image: url(../img/ni/four.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+.fiveBTN
+{
+	background-image: url(../img/ni/five.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+.sixBTN
+{
+	background-image: url(../img/ni/six.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+.sevenBTN
+{
+	background-image: url(../img/ni/seven.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+.eightBTN
+{
+	background-image: url(../img/ni/eight.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+.nineBTN
+{
+	background-image: url(../img/ni/nine.svg);
+	background-size: 30px 90px;
+	background-repeat: no-repeat;
+}
+
+.dogVideoBar {
+	list-style: none;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.dogVideoBar ul {
+  padding: 0 25px 0 25px;
+}
+
+.dogVideoBar ul li {
+	float: left;
+  display:inline;
+	width: 32px;
+	height: 32px;
+	margin-top: -5px;
+	margin-left: 4px;
+  margin-right: 4px;
+}
+
+.dogVideoBar ul li a {
+	display: block;
+	height: 30px;
+	overflow: hidden;
+	text-indent: -1000em;
+	text-decoration: none;
+}
+
+.dogVideoBar ul li a:active {
+	margin-top: 2px;
+	margin-left: 2px;
+	background-position: 0 -60px !important;
+}
+
+.dogVideoBar ul li a:hover {
+	background-position: 0 -30px !important;
+}
+
+.dogVideoBar li.on a, .dogAdminBar li.on a:hover {
+	background-position: 0 -60px !important;
+}
+

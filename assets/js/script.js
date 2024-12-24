@@ -6,7 +6,7 @@ function showWhiteRose() {
   } else {
     rose.style.width = '640px';
     rose.style.height = '480px';
-    rose.innerHTML = '<source src="./public/videos/the_search_for_the_white_rose.mp4" type="video/mp4"></source>'
+    rose.innerHTML = '<source src="./public/videos/dynamo.mp4" type="video/mp4"></source>'
   }
 }
 
